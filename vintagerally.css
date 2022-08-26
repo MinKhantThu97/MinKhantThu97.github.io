@@ -1,5 +1,3 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");*/
-
 *,
 *::after,
 *::before {
@@ -33,7 +31,6 @@ body {
   outline: none;
   margin-top: 1em;
   text-transform: uppercase;
-  font-weight: small;
 }
 
 .btn-primary {
@@ -46,19 +43,19 @@ body {
   transition: background 0.3s ease-in-out;
 }
 /* ............/Animitade Search Box............ */
-input[type=text] {
-    width: 30%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+form.search input [type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
   }
   
   input[type=text]:focus {
@@ -216,18 +213,16 @@ font-family: 'Edwardian Script ITC';
 }
 /* ......../ Table /.......... */
 table{
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-  border: 1.5px solid white;
-  background-color: whitesmoke;
-  }
-table.center{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-}
+  margin-top: 10px;
+  
+  width: 100%;
+ 
+  }
+
+
+
 
 .text-center{
   text-align: center;
@@ -269,11 +264,10 @@ table.center{
     flex: 1 1 400px;
     padding: 30px;
     margin: auto;
-    transform: translate(-150%);
-    animation: about-text-animation 1s ease-in-out forwards;
+    
   }
   
-  @keyframes about-text-animation {
+  @keyframes qa-text-animation {
     100% {
       transform: translate(0);
     }
@@ -412,11 +406,11 @@ table.center{
 
 #footer h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 0.8rem;
   padding: 2.6rem;
   font-weight: 500;
   color: #fff;
-  background: rgb(65, 65, 65);
+  background: teal;
 }
 /*--------Slide show -------*/
 .mySlides {display: none}
@@ -545,6 +539,14 @@ img {
     margin-bottom: 10px;
     height: auto; /* Used in this example to enable scrolling */
   }
+  .iframe-container {
+		text-align:center;
+  		width:100%;
+  }
+  iframe{
+    width: 800px;
+    height: 520px;
+  }
 
 
 /* ......../ media query /.......... */
@@ -669,7 +671,10 @@ img {
     margin: auto;
     border: 5px solid #555;
   }
-  
+  iframe{
+    width: 280px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 500px) {
